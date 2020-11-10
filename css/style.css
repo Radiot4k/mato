@@ -1895,3 +1895,119 @@ img {
     width: 290px;
   }
 }
+.good {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 calc(25% - 60px) 10px;
+}
+.good__image-wrap {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  margin: 10px 0;
+}
+.good__image {
+  display: block;
+  width: 280px;
+}
+.good__price-wrap {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 0;
+  text-align: right;
+}
+.good__price {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.good__button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid #cc0000;
+  border-radius: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.good__button:hover,
+.good__button:focus {
+  color: #ffffff;
+  background-color: #cc0000;
+}
+.good__desc {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+}
+.good__h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.good__spec {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .good {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 calc(30% - 190px) 20px;
+  }
+  .good__image-wrap {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 50%;
+    padding-right: 20px;
+  }
+  .good__desc {
+    width: 50%;
+    padding-left: 20px;
+  }
+  .good__price-wrap {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50%;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .good__spec {
+    width: 50%;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .good {
+    padding: 0 30px 20px;
+  }
+}
