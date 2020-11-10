@@ -763,9 +763,9 @@ img {
   font-size: 12px;
   color: #ffffff;
 }
-.lang__item--current {
-  padding: 6px 10px;
+.lang__item--current a {
   background-color: #cc0000;
+  cursor: default;
 }
 .lang__item a {
   display: block;
@@ -775,8 +775,8 @@ img {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-.lang__item a:hover,
-.lang__item a:focus {
+.lang__item:not(.lang__item--current) a:hover,
+.lang__item:not(.lang__item--current) a:focus {
   color: #cccccc;
 }
 .main {
@@ -1651,6 +1651,11 @@ img {
   display: block;
   -webkit-animation-name: overlay;
           animation-name: overlay;
+}
+@media (min-width: 768px) {
+  .modal {
+    padding: 30px;
+  }
 }
 @-webkit-keyframes modal {
   0% {
