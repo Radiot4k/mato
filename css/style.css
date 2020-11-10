@@ -423,6 +423,9 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -511,6 +514,9 @@ img {
 }
 @media (min-width: 568px) {
   .header__logo--1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
   .header__logo-image {
