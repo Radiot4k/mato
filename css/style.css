@@ -528,7 +528,18 @@ img {
   .header__text {
     width: auto;
     margin: 0;
-    font-size: 20px;
+  }
+  .header__text--tel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .header__text--tel a:first-child {
+    margin-right: 0;
   }
   .header__text--mail {
     position: absolute;
