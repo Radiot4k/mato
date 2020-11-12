@@ -1047,7 +1047,7 @@ img {
 }
 .slider__link:hover .slider__text,
 .slider__link:focus .slider__text {
-  color: #000000;
+  color: #cc0000;
 }
 .slider__text {
   -webkit-box-sizing: border-box;
@@ -1077,10 +1077,12 @@ img {
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
+.slider__image-wrap {
+  width: 100%;
+}
 .slider__image {
   display: block;
   width: 100%;
-  height: 100%;
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
   -webkit-animation-timing-function: ease;
@@ -1187,9 +1189,8 @@ img {
     width: 50%;
     text-align: right;
   }
-  .slider__image {
+  .slider__image-wrap {
     width: 50%;
-    height: 50%;
   }
   .slider__radio-label {
     right: calc(50% + 120px);
