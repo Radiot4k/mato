@@ -467,7 +467,8 @@ img {
 .header__text--tel a:first-child {
   margin-right: 20px;
 }
-.header__text a:hover {
+.header__text a:hover,
+.header__text a:focus {
   color: #cc0000;
 }
 .header__logo-image {
@@ -615,11 +616,6 @@ img {
   letter-spacing: 0.5px;
   border-bottom: solid 1px rgba(255, 255, 255, 0.5);
 }
-.nav__item--current {
-  padding: 14px;
-  color: #ffffff;
-  background-color: #cc0000;
-}
 .nav__link {
   position: relative;
   z-index: 10;
@@ -632,6 +628,10 @@ img {
 }
 .nav__link:hover,
 .nav__link:focus {
+  color: #ffffff;
+  background-color: #cc0000;
+}
+.nav__link--current {
   color: #ffffff;
   background-color: #cc0000;
 }
@@ -684,9 +684,13 @@ img {
   transition: 0.25s ease;
 }
 .nav__sublink:hover,
-.nav__sublink:focus {
+.nav__sublink:focus,
+.nav__sublink--current {
   color: #ffffff;
   background-color: #cc0000;
+}
+.nav__sublink--current {
+  cursor: default;
 }
 @media (max-width: 1199px) {
   .nav:not(.nav--nojs) .nav__list {
@@ -737,17 +741,6 @@ img {
     color: #ffffff;
     background-color: inherit;
   }
-  .nav__item--current::after {
-    content: "";
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    display: block;
-    width: 100%;
-    height: 10px;
-    background-color: #cc0000;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
   .nav__item:hover .nav__sublist {
     -webkit-transform: translateY(100%) scaleY(1);
             transform: translateY(100%) scaleY(1);
@@ -786,6 +779,15 @@ img {
   .nav__link:focus + .nav__sublist {
     -webkit-transform: translateY(100%) scaleY(1);
             transform: translateY(100%) scaleY(1);
+  }
+  .nav__link--current {
+    color: #000000;
+    background-color: #cccccc;
+    cursor: default;
+  }
+  .nav__link--current::after {
+    -webkit-transform: translateY(15px) scaleX(1);
+            transform: translateY(15px) scaleX(1);
   }
 }
 .lang {
@@ -1305,7 +1307,7 @@ img {
 .footer__nav-item {
   margin-bottom: 10px;
 }
-.footer__nav-item a {
+.footer__nav-link {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -1313,14 +1315,13 @@ img {
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
-.footer__nav-item a:hover,
-.footer__nav-item a:focus {
+.footer__nav-link:hover,
+.footer__nav-link:focus {
   color: #cc0000;
 }
-.footer__nav-item--current {
+.footer__nav-link--current {
   color: #cc0000;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  cursor: default;
 }
 .footer__info {
   display: -webkit-box;
@@ -1352,7 +1353,7 @@ img {
   transition: 0.25s ease;
 }
 .footer__info-link:hover,
-.footer__info-linkfocus {
+.footer__info-link:focus {
   color: #cc0000;
 }
 .footer__info-link--address {
