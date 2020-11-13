@@ -1339,7 +1339,6 @@ img {
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
-  font-size: 14px;
 }
 .footer__info-text--title {
   font-size: 16px;
@@ -1355,6 +1354,9 @@ img {
 .footer__info-link:hover,
 .footer__info-linkfocus {
   color: #cc0000;
+}
+.footer__info-link--address {
+  font-size: 14px;
 }
 .footer__copyright {
   margin: 0;
