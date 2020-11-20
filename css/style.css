@@ -523,6 +523,7 @@ img {
   .header__text {
     width: auto;
     margin: 0;
+    font-size: 18px;
   }
   .header__text--tel {
     -webkit-box-orient: vertical;
@@ -532,6 +533,9 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    line-height: normal;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
   .header__text--tel a:first-child {
     margin-right: 0;
@@ -539,7 +543,7 @@ img {
   .header__text--mail {
     position: absolute;
     right: 30px;
-    bottom: 30px;
+    bottom: 28px;
   }
 }
 .nav {
@@ -746,6 +750,7 @@ img {
   }
   .nav__item {
     width: auto;
+    letter-spacing: normal;
   }
   .nav__item:hover .nav__sublist {
     display: -webkit-box;
@@ -753,13 +758,6 @@ img {
     display: flex;
     -webkit-animation-name: sub-list;
             animation-name: sub-list;
-  }
-  .nav__item:last-child .nav__sublist {
-    right: 0;
-    left: auto;
-  }
-  .nav__item:last-child .nav__sublink {
-    text-align: right;
   }
   .nav__sublist {
     position: absolute;
@@ -830,7 +828,12 @@ img {
     background-color: #cccccc;
   }
   .nav__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 20px 30px;
+  }
+  .nav__item {
+    letter-spacing: 1px;
   }
 }
 @-webkit-keyframes sub-list {
@@ -1280,7 +1283,7 @@ img {
 @media (min-width: 1200px) {
   .slider {
     margin-bottom: 28px;
-    padding: 0 30px;
+    padding: 30px 30px 0;
   }
   .slider__text {
     padding-right: 40px;
