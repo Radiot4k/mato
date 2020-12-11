@@ -2214,6 +2214,8 @@ nowrap {
             order: 1;
   }
   .good__text-wrap {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding-right: 10px;
   }
   .good__button {
